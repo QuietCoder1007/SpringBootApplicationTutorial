@@ -3,27 +3,27 @@ package com.example.consumingrest;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Quote {
+public class Todo {
 
 	private String type;
-	private Value value;
+	private Event value;
 
-	public Quote() {
+	public Todo() {
 	}
 
 	public String getType() {
 		return type;
 	}
 
+	public Event getValue() {
+		return value;
+	}
+
 	public void setType(String type) {
 		this.type = type;
 	}
 
-	public Value getValue() {
-		return value;
-	}
-
-	public void setValue(Value value) {
+	public void setValue(Event value) {
 		this.value = value;
 	}
 
